@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e40016cd-53d5-491e-b1ac-5cd5c5d0bb48" name="Changes" comment="added number and e-mail">
+    <list default="true" id="e40016cd-53d5-491e-b1ac-5cd5c5d0bb48" name="Changes" comment="added img and files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +46,7 @@
       <updated>1646808815348</updated>
       <workItem from="1646808817327" duration="1302000" />
       <workItem from="1646810859740" duration="1555000" />
-      <workItem from="1646812425469" duration="2459000" />
+      <workItem from="1646812425469" duration="3414000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1646809486883</created>
@@ -110,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646814777865</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added img and files">
+      <created>1646815586431</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1646815586431</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,7 +141,8 @@
     <MESSAGE value="add style.css" />
     <MESSAGE value="added stylesheet and images" />
     <MESSAGE value="added number and e-mail" />
-    <option name="LAST_COMMIT_MESSAGE" value="added number and e-mail" />
+    <MESSAGE value="added img and files" />
+    <option name="LAST_COMMIT_MESSAGE" value="added img and files" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
