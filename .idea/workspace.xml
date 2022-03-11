@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e40016cd-53d5-491e-b1ac-5cd5c5d0bb48" name="Changes" comment="added img and files">
+    <list default="true" id="e40016cd-53d5-491e-b1ac-5cd5c5d0bb48" name="Changes" comment="added source">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -46,7 +46,8 @@
       <updated>1646808815348</updated>
       <workItem from="1646808817327" duration="1302000" />
       <workItem from="1646810859740" duration="1555000" />
-      <workItem from="1646812425469" duration="3414000" />
+      <workItem from="1646812425469" duration="4319000" />
+      <workItem from="1646979686532" duration="991000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1646809486883</created>
@@ -118,7 +119,21 @@
       <option name="project" value="LOCAL" />
       <updated>1646815586431</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added works">
+      <created>1646820303394</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1646820303394</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added source">
+      <created>1646820523869</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1646820523869</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,7 +157,9 @@
     <MESSAGE value="added stylesheet and images" />
     <MESSAGE value="added number and e-mail" />
     <MESSAGE value="added img and files" />
-    <option name="LAST_COMMIT_MESSAGE" value="added img and files" />
+    <MESSAGE value="added works" />
+    <MESSAGE value="added source" />
+    <option name="LAST_COMMIT_MESSAGE" value="added source" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
