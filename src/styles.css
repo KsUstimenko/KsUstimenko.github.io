@@ -1,0 +1,369 @@
+/*------------------ГЛОБАЛЬНЫЕ СТИЛИ------------------*/
+
+
+/*---ЦВЕТА---*/
+:root {
+    --brown: #332317;
+    --red: #970C0C;
+    --green: #49970C;
+    --blue: #0C5497;
+    --purple: #490C97;
+
+    --ligth-grey: #C4C4C4;
+    --dark-grey: #A5A5A5;
+
+    --light-brown: #A77C5D;
+    --dark-brown: #997052;
+
+    --light-beige: #F4E8DE;
+    --dark-beige: #EDDACA;
+
+
+    /*---ЦВЕТА ОТДЕЛЬНЫХ ЭЛЕМЕНТОВ---*/
+    --footer-navigation_history: var(--dark-grey);
+    --cat-Polimorf: var(--blue);
+    --cat-Pulheria: var(--purple);
+    --cat-Apofem: var(--red);
+    --arrow-green: var(--green);
+    --arrow-red: var(--red);
+    --button_create: var(--light-brown);
+    --button_cancel: var(--light-beige);
+}
+
+
+/*---РАЗМЕРЫ ШРИФТА---*/
+.titles {
+    font-size: 24px;
+}
+.medium-font {
+    font-size: 20px;
+}
+.smallest-font {
+    font-size: 13px;
+}
+
+
+/*---ОТМЕНА MARGIN---*/
+h1, p, svg,
+dl, dt, dd,
+button {
+    margin: 0;
+}
+
+
+/*---ГЛОБАЛЬНЫЕ ЭЛЕМЕНТЫ---*/
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+
+    font: 400 16px/24px "Roboto", sans-serif;
+    color: var(--brown);
+    background-color: var(--light-beige);
+}
+.wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+
+/*---СЕМАНТИКА---*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+
+    background-color: var(--light-brown);
+
+    padding: 0 12px;
+}
+.header__left-side {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+.main {
+    flex: 1;
+    padding: 23px 12px 23px 12px;
+}
+.kg-arrow {
+    display: flex;
+    align-items: center;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    column-gap: 112px;
+
+    flex-shrink: 0;
+    position: sticky;
+    bottom: 0;
+
+    line-height: 13px;
+    border-top: 1px solid var(--light-brown);
+    background-color: var(--light-beige);
+
+    padding: 18px 4px 5px 0;
+}
+.footer__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button_history {
+    color: var(--dark-grey);
+}
+
+
+/*---SVG---*/
+.pointer:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.svg_small {
+    width: 24px;
+    height: 24px;
+}
+.svg_big {
+    width: 60px;
+    height: 60px;
+}
+.svg__cat_Polimorf {
+    --cat-color: var(--cat-Polimorf);
+}
+.svg__cat_Pulheria {
+    --cat-color: var(--cat-Pulheria);
+}
+.svg__cat_Apofem {
+    --cat-color: var(--cat-Apofem);
+}
+.svg__arrow_green {
+    transform: rotate(-90deg);
+    --arrow-color: var(--arrow-green);
+}
+.svg__arrow_red {
+    --arrow-color: var(--arrow-red);
+}
+.svg__pencil {
+    opacity: 0;
+    margin-left: 40px;
+}
+.svg__header {
+    background-color: var(--light-brown);
+    border: none;
+}
+.svg__main-footer {
+    background-color: var(--light-beige);
+    border: none;
+}
+
+
+/*---ПОДНЯТИЕ LABEL НАВЕРХ ПРИ ФОКУСЕ НА INPUT---*/
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.form-item {
+    position: relative;
+    display: inline-block;
+}
+.form-item__field {
+    padding: 14px 15px;
+
+    background-color: var(--light-beige);
+    border: 1px solid var(--light-brown);
+    box-shadow: 0 4px 6px var(--ligth-grey);
+    border-radius: 8px;
+
+    box-sizing: border-box;
+    width: 100%;
+}
+.form-item__label {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+}
+.form-item .form-item__field:focus + .form-item__label,
+.form-item .form-item__field:not(:placeholder-shown) + .form-item__label {
+    transform: translate(1px, -24px) scale(1);
+    transition: 0.2s;
+
+    padding: 0 5px;
+    border-radius: 8px;
+    font-size: 13px;
+    background-color: var(--light-beige);
+}
+
+
+/*---КРАСНЫЕ ЗВËЗДЫ В ФОРМЕ---*/
+.stars {
+    color: var(--red);
+}
+
+
+/*----------------------------1 PAGE----------------------------*/
+/*---Общий контейнер---*/
+.cat {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 15px;
+}
+/*---Повторяющийся контейнер---*/
+.cat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid var(--light-brown);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px var(--ligth-grey);
+
+    padding: 11px 10px 7px 22px;
+}
+
+
+/*---Блоки контейнера---*/
+.cat-item__left {
+    display: flex;
+    column-gap: 25px;
+    line-height: 30px;
+}
+.cat-item__right {
+    display: flex;
+    flex-direction: column;
+    row-gap: 41px;
+}
+
+
+/*---Появление карандаша при наведении на блок---*/
+.cat-item:hover .svg__pencil {
+    opacity: 1;
+}
+
+
+/*----------------------------2 PAGE----------------------------*/
+.list {
+    width: 45%;
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(35%, 1fr));
+
+    word-break: break-all;
+    gap: 10px 17px;
+    margin-bottom: 20px;
+} /*---Общий контейнер---*/
+
+
+/*----------------------------3 PAGE----------------------------*/
+/*---Фоновые иконки для Species и Birthday---*/
+.form-item__select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("icons/brown_arrow_bottom.png") no-repeat right 14px top 50%;
+}
+.form-item__birthday {
+    background: url("icons/calendar.svg") no-repeat right 18px top 50%;
+}
+
+
+/*----------------------------4 PAGE----------------------------*/
+/*---Повторяющийся контейнер---*/
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid var(--light-brown);
+
+    padding: 12px 11px;
+}
+/*---Блок контейнера---*/
+.history-item__left {
+    display: flex;
+    column-gap: 76px;
+}
+
+
+/*----------------------------POPUP-----------------------------*/
+/*---Общий контейнер---*/
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease 0s;
+    background-color: rgba(0,0,0,0.8);
+}
+.popup__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: 100%;
+    margin-top: 159px;
+}
+.popup__content {
+    background-color: var(--light-beige);
+    border-radius: 12px;
+
+    max-width: 768px;
+    width: 90%;
+
+    padding: 17px 0 16px 0;
+}
+.popup._visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*---Блоки контейнера---*/
+.popup__title {
+    padding: 1px 0 17px 16px;
+    border-bottom: 1px solid var(--light-brown);
+}
+.popup__form {
+    padding: 23px 12px;
+    border-bottom: 1px solid var(--light-brown);
+}
+.popup__buttons {
+    display: flex;
+    justify-content: center;
+
+    column-gap: 50px;
+    padding-top: 15px;
+    margin: 0 auto;
+}
+.button {
+    border-radius: 8px;
+    padding: 14px 36px;
+}
+.button._create {
+    border: none;
+    background-color: var(--button_create);
+}
+.button._cancel {
+    border: 1px solid var(--light-brown);
+    background-color: var(--button_cancel);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Weight Monitor_update</title>
+
+        <link rel="stylesheet" href="../src/styles.css" />
+        <link rel="stylesheet" href="../src/normalize.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" />
+    </head>
+    <!--------------------------------------------------------------------------->
+    <body class="wrapper update-wrapper " id="modalId">
+        <!---------------------------------MAIN---------------------------------->
+        <main class="update">
+            <!------------------------------------------------------------------->
+            <p class="titles update__title">Update Weight</p>
+            <!------------------------------------------------------------------->
+            <form class="form update__form">
+                <!--------------------------------------------------------------->
+                <select class="form-item__field form-item__select">
+                    <option value="species" disabled selected>Weight</option>
+                    <option>Fat</option>
+                    <option>Slender</option>
+                </select>
+                <!--------------------------------------------------------------->
+                <div class="form-item">
+                    <input class="form-item__field" type="text" name="name" id="name" placeholder=" " />
+                    <label class="form-item__label" for="name">Measuring Date<span class="stars">*</span></label>
+                </div>
+                <!--------------------------------------------------------------->
+            </form>
+            <!------------------------------------------------------------------->
+            <div class="update__buttons">
+                <button class="button _create pointer">Create</button>
+                <button class="button _cancel pointer" onclick="openHomePage()" id="closeModalId"
+                >Cancel</button>
+            </div>
+            <!------------------------------------------------------------------->
+        </main>
+        <!----------------------------------JS----------------------------------->
+        <script src="../script.js"></script>
+    </body>
+</html>
